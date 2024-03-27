@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    </head>
+    <body>
+    <nav id="desktop-nav">
+        <div class="logo">Chih-Yin Wu</div>
+        <div>
+        <ul class="nav-links">
+            <li><a href ="#about">About</a></li>
+            <li><a href ="#experience">Experience</a></li>
+            <li><a href ="#career">Career Path</a></li>
+            <li><a href ="#contact">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Chih-Yin Wu</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href ="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href ="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href ="#care" onclick="toggleMenu()">Career Path</a></li>
+            <li><a href ="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+     </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-contanier">
+            <img src="./picture/IMG_3983.JPG" alt="my picture"/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Chih-Yin Wu</h1>
+            <p class="section_text_p2">Beginner Web Developer</p>
+            <div class="btn-container">
+                <a href="./picture/吳芷吟resume.jpg" download="CV">
+                    <button class="btn btn-color-2">Download CV</button>
+                </a>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            
+            <div id="socials-container">
+                <img
+                src="./picture/1024px-Facebook_icon_(black).svg.png"
+                alt="My Facebook"
+                class="icon"
+                onclick="location.href='https://www.facebook.com/profile.php?id=100000363578593'"
+                />
+            
+                <img
+                src="./picture/25231.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/yinxoxo'"
+                />
+           
+        </div>
+        </div>
+    
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1" style="color: rgb(203, 193, 116);" >
+            Get To know More
+        </p> 
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-contanier">
+                <img
+                src="./picture/119062820_3251558854957589_1396698280177046850_n.jpg"
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./picture/learn.png"
+                            alt="Learn icon"
+                            class="icon"
+                        />
+                        <h3 class="experience-title">Reasons to Become An Engineer</h3>
+                        <div class="text-container">
+                            <p><center><b>乘在浪尖上，我知道這是面對挑戰最好的視角。</b></center>
+                                這是一個讓我決定前往『後端工程師』進修之路的契機。自從研究所畢業後，我持續參加相關海洋及生態領域的學術研討會，保持學習新知的習慣，也在這過程中發現到許多生態研究及調查仰賴各式的線上資料庫資源，如：TaiBIF、GBIF、World Ocean Database…等，透過這些資料庫中的開放性資料提供可靠正確的科學證據，讓研究人員可以迅速掌握宏觀的背景知識。
+
+                                當我想再更深入瞭解這些應用時，才驚覺這些資料庫背後的推動，一大部分來自於資料庫系統的設計、建立和維護，我當時就希望能有機會直接參與這些科學研究的基礎建設。<br/><br/>由於這個啟發點，我開始反思我之前所使用到的統計軟體、影像分析軟體，都是透過程式語言將想法或是理論進行實踐，讓我深刻了解<b>程式語言與資訊科學在不同領域上的發展性及重要價值。
+                                </b>
+                                在開始正式接觸程式語言、決心投入轉職之前，我花了一兩個月的時間在調查軟體業的產業趨勢、生態系、人才供應需求，雖然我勇於挑戰新事物但也絕非貿然行事。這才發現到軟體產業竟是另一片大海，且四季更迭，日以繼夜持續變化，是難以看清邊界的浩大。彷彿就像我最愛的海洋，充滿未知與挑戰，但若願意花時間去了解他，必能發掘引人入勝之處。
+                                </p>
+                        </div>
+                    </div>
+                    
+                    <div class="details-container">
+                        <img src="./picture/emotion.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3 class="experience-title" style="color: rgb(176, 169, 116);">Biggest Challenge in Life</h3>
+                        <div class="text-container">
+                            <p> 我最大的成就並非贏得比賽中的金牌、或是取得人生勝利的標誌。而是我心之所向，行之所往，<b>不畏沿途風雨，面對挑戰也不輕言放棄</b><br/>
+
+                                在我大學時的實習經驗中，接觸到至今都依舊令我著迷的-大海，在大三那年決定投入海洋研究中，當時連游泳都不會的我，毅然決然地踏上這段充滿未知的旅程。大學一畢業後便進入了海洋生物所，除了精進本科學業外也開始學習相關水下技能，並考取潛水執照。就讀碩士班時期，充滿熱誠且樂於分享的我，便擔任偏鄉中小學的海洋教育講師。畢業後便成為一名全職水下生態調查工作者，就業後的我持續挑戰自我，在工作兩年內便考取五張技術執照。從一隻旱鴨子到現今投入海洋領域已有七年的時光，回顧這七年來，我深深感謝自己始終保持著初心，勇於面對挑戰的勇氣。
+                                
+                            </p>
+                        </div>
+                    </div>
+                 
+                </div>
+                
+            </div>
+        </div>
+        <img src="./picture/1502567.webp" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />  
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1"></p>
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+            
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./picture/challenge.png"
+                            alt="Learn icon"
+                            class="icon"
+                        />
+                        <h3 class="experience-title">Programming Learning Experience</h3>
+                        <div class="text-container">
+                            <p>&emsp;&emsp;由於軟體業的生態圈特性，網路上充斥著各式學習資源、技術文章、教學平台，我先是透過<b>Notion以系統化的方法統整自己所收集到的軟體學習資源</b>，並參考<b>Backend Developer Roadmap</b>的開發人員地圖以及不同培訓中心的課程大綱後，著手規劃自己的學習進程。並搭配自己建立的<b>Notion專案管理系統，管理自己各項學習進度</b>，並建立階段性目標。<br/><br/>
+
+                                在今年的2月17號正式開始學習，我的第一個系列課程是網頁前端工程，我花了三週的時間上完這系列課程，並完成我的第一個靜態網頁開發，且使用GitHub Page將網頁上線。雖然學習程式語言的時間不長，<b>但我打從第一堂課開始，便開始利用Hack MD建立完整的課程筆記</b>，將每一堂課到的code都記錄下來，無一例外。透過撰寫筆記的過程，反覆釐清所學觀念，打造自己的知識庫。<br/><br/>
+                                
+                                也在這次的開發經驗中更加確認自己的決心，深知自己該學習該探索路途還很遙遠，半工半讀的狀態下是無法追上自己的求知心，決定在四月底離開原本的工作崗位並與我熟悉且敬愛的大海短暫離別，往成為軟體工程師這條路持續邁進。<br/><br/>
+                                
+                                現階段，透過線上影音教學資源著手學習Java語言，並搭配Udacity的課程內的實作練習，將所學語法加以練習，目前也在同步學習git版本控制，並持續利用Hack MD建立課程筆記。從現階段到培訓開始前約莫近兩個月的學習時間，將規劃在培訓開始前完成Java Basics、SQL Database之學習並探索後端框架，並透過小型專案加以實作、刻意練習。盡力在正式培訓前做好萬分準備。
+                                
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="details-container">
+                        <img src="./picture/developer.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3 class="experience-title" style="color: rgb(176, 169, 116);">Explore Interests</h3>
+                        <div class="text-container">
+                            <p>在決定第一步的學習路線前，我先是查閱的各家轉職培訓機構的課程大綱，仔細瀏覽過後發現不論何種班別、特定程式語言專班，大部分課程規劃都會學習基礎的前端工具語言：HTML、CSS、JavaScript，在AppWorks School後端班中也不例外。所以在接觸AppWorks School的興趣初探內容前，我先是開始學習前端三寶，並在初步課程結束後，<b>著手進行靜態響應式網頁開發，透過實際開發實踐所學</b>，並持續從錯誤中獲得新知。這段期間我同時進行AppWorks School前幾屆的加分作業freecode camp-Legacy JavaScript Algorithms and Data Structures-<b>Basic JavaScript解題課程</b>，刻意反覆練習JavaScript，在113題之中已完成其中的81題，解題過程對我來說非常有趣，彷彿是在玩解謎任務。實踐完我第一個網頁開發後，便開始投入學習Java語言，從資料型態一路到類別及物件實體的應用，也完成了<b>Udacity課程 OOP in Java</b>中的Exercise: Contacts Manager。<br/><br/>
+
+                                目前在學習上遇到的疑問是在線性的學習過程中雖然可以一步一步了解基礎語言的邏輯、語法，但卻未能宏觀地了解到這些語言在網頁中的實際應用情行，例如在網頁的哪個部分中可能會實踐迴圈語法。我相信若能透過的任務導向式地實踐專案和項目，讓我有機會將所學應用到實際情況中。這同時也是我想加入AppWorks School的原因，由專業師資設計的課程架構，涵蓋了廣泛的主題和技能，能建立更完整的知識體系。透過翻轉式教育模式下，透過與同儕的一同腦力激盪來解決學習中遇到的問題，獲得及時的反饋和建議。
+                                
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+            <div class="about-containers">
+                <div class="details-container" ">
+                    <h2 class="experience-sub-title" >Notes system</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./picture/HackMD_LOGO_vertical_white.png" 
+                            alt="html"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Hack MD</h3>  
+                                <a href="https://hackmd.io/@zD8y3780TOusIsHSuvPcnA/r1-DqdQ3T" target="_blank">
+                                    <button class=" btn-color-3">Check</button>
+                                  </a>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./picture/Notion_app_logo.png" 
+                            alt="html"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Notion</h3>  
+                                <a href="https://speckled-pest-3c1.notion.site/open-4aa66713ca2c47f894009d5f47ef9a62?pvs=4" target="_blank">
+                                    <button class=" btn-color-3">Check</button>
+                                    </a>
+                            </div>
+                        </article>
+                    </div>
+                    <h2 class="experience-sub-title" >Website Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./picture/free-html-58-225994.webp" 
+                            alt="html"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>
+                                    In Progress</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./picture/csss.png" 
+                            alt="css"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>
+                                    In Progress</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./picture/js.png" 
+                            alt="javascript"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>
+                                    In Progress</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./picture/java.png" 
+                            alt="java"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>
+                                    In Progress</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+   
+
+        <img src="./picture/1502567.webp" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#career'"
+        />  
+    </section>
+
+
+    
+        </div>
+        <img src="./picture/1502567.webp" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'"
+        />  
+    </section>
+
+
+   
+    <section id="career">
+        <p class="section_text_p1" style="color: rgb(203, 193, 116);" >
+            How Do I Plan
+        </p> 
+        <h1 class="title">Career Path</h1>
+        <div class="section-container">
+            <div class="section_pic-contanier">
+                <img
+                src="./picture/backend road.jpeg"
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+           
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./picture/study.png"
+                            alt="Learn icon"
+                            class="icon"
+                        />
+                        <h3 class="experience-title">Plan within Three Years</h3>
+                        <div class="text-container">
+                            <p>
+
+                                  結訓後，積極發揮所學、獲取後端工程師職缺，雖說已經正式入門該領域， 但是<b>不斷地精進才是更為重要的長遠目標</b>。深知轉職生對於理論背景知識的不足，在結訓後第一年將安排在工作之餘時間， 透過各大學的<b>隨班附讀課程</b>，學習如資料結構與演算法、計算機概論，來奠定基礎知識。在工作上、個人閒暇之餘透過大量的刻意練習、專案實作，徹底熟悉相關技能。總而言之，在<b>結訓後第一年，奠定基礎知識、大量應用實作</b>，並參與技術會議觀察產業最新動態。<br/><br/>
+
+                                結訓後的二至三年，此時已累積一定量的程式開發經驗，將根據當時所學經驗並持續探索興趣，<b>規劃個人職涯技能樹，持續向下深入學習專業技能</b>，如：Testing、 Scaling Databases 等，期間不斷提升自己的技能水平、擴展專業知識。並逐漸<b>培養軟實力</b>，如學習專案管理技能，包括任務分配、時間管理和風險評估等。期許自己在結訓三年後，不單單是一位後端工程師，<b>把握職涯中更多的可能性</b>。<br/><br/>
+                                
+                                此外，對於軟體工程師來說除了程式語言的專業技術之外，英文能力無非也是另一個十分重要的軟實力， 不論是線上的學習資源、官方的說明文件、最即時的產業資訊、跨國會議等皆仰賴自身的英文能力。 在英文能力發展的路途上，在研究所時期經常閱讀英文文獻，故累積的大量的英文閱讀經驗。 且因未來希望可以進入外商公司甚至成為國際遠端工程師，故目前的學習路徑安排為考取相關英文證照， 作為我的第一張入場卷。接著是<b>提升口說會話能力，讓職涯歸劃不在被語言所受限</b>。從今年一月開始， 我進行了每週一次的英文家教課程，預期將於四月底完成英文證照考試，且持續維持學習英文。
+                                
+                                
+                            </p>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                </div>
+                
+            </div>
+        </div>
+        <img src="./picture/1502567.webp" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'"
+        />  
+    </section>
+    
+
+
+
+    <section id="contact">
+        <p class="section_text_p1" style="color: rgb(203, 193, 116);">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./picture/email.png"
+                     alt="email icon"
+                     class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:pupu86019@gmail.com">pupu86019@gmail.com</a></p>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href ="#about">About</a></li>
+                    <li><a href ="#experience">Experience</a></li>
+                    <li><a href ="#career">Career Path</a></li>
+                    <li><a href ="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2024 Chih-Yin Wu. All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+     
+</html> 
